@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Login</title>
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+      <!-- Font Awesome  -->
+      <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/css/main.css">
+      <!--Estilos propios Iconos fonts-->
+      <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- NAV BAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-sticky text-center">
+    <a class="navbar-brand" href="index.html" ><img src="/css/Logo.svg"></a> <!--Logo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="bicicletas.html">Bicicletas <span class="sr-only">(current)</span></a>
+        </li>
+        <div class="dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Productos
+            </a>
+            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="repuestos.html">Repuestos</a>
+              <a class="dropdown-item" href="equipamiento.html">Equipamiento</a>
+              <a class="dropdown-item" href="#">Otros</a>
+            </div>
+          </div>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Rutas <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html"> <img  src="/css/person.svg" style="font-size: 2.0rem !important"> </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="carrito.html"> <img src="/css/shoppingCar.svg"  style="font-size: 2.0rem !important"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+<!--NAV BAR-->
+
+
+<!--LOGIN -->
+<div class="container p-5">
+  <form class="border border-light p-5">
+      <p class="h4 mb-4 text-center">Ingreso</p>
+
+      <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 " placeholder="Correo">
+
+      <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+
+      <div class="d-flex justify-content-between">
+          <div>
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                  <label class="custom-control-label" for="defaultLoginFormRemember">Recuerdame</label>
+              </div>
+          </div>
+          <div>
+              <a href="">¿Olvidaste la contraseña?</a>
+          </div>
+      </div>
+
+      <button class="btn btn-primary btn-block my-4" id="enviar" type="submit">Ingresar</button>
+
+      <div class="text-center">
+          <p>¿No tienes cuenta?
+              <a href="registrar.html">Registrate</a>
+          </p>
+
+          <p>O accede con:</p>
+          
+          <a type="button" class="light-blue-text mx-2">
+              <i class="fab fa-google"></i>
+          </a>
+      </div>
+  </form>
+</div>
+<!--LOGIN -->
+
+
+<!--FOOTER-->
+<div class="position-static fixed-bottom">
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="accordion w-100 d-lg-flex" id="accordion">
+                <div class="col-lg-4 col-md-12">
+                  <a href="#one" data-toggle="collapse"
+                    class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Contacto</a>
+                  <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                    Contacto
+                  </div>
+                  <div class="collapse text-white d-lg-flex" id="one" data-parent="#accordion">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div><i href="#" class="fab fa-facebook-square"></i><a class="colorText"
+                            href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX"> AlmacenFabioAcevedo</a>
+                        </div>
+                      <li>
+                      <li>
+                        <div><i href="#" class="fab fa-instagram"></i><a class="colorText"
+                            href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX"> AlmacenFabioAcevedo</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div><i href="#" class="fab fa-twitter-square"></i><a class="colorText"
+                            href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX"> AlmacenFabioAcevedo</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div><i class="fas fa-envelope"></i><a class="colorText"
+                            href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX"> AlmacenFabioAcevedo</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <a href="#two" data-toggle="collapse"
+                    class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Servicio & Legal</a>
+                  <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                    Servicios & Legal
+                  </div>
+                  <div class="collapse text-white d-lg-flex" id="two" data-parent="#accordion">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX">Terminos y
+                          condiciones</a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX">Garantias</a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX">Politicas de
+                          privacidad</a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/AlmacenFabioAcevedo/?epa=SEARCH_BOX">Atencion al Cliente</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <a href="#three" data-toggle="collapse"
+                    class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Inscribete</a>
+                  <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                    Inscribete
+                  </div>
+                  <div class="collapse text-white d-lg-flex" id="three" data-parent="#accordion">
+                    <div><input type="text" placeholder="email"><button type="button"
+                        class="btn btn-primary btn-sm ml-2 mb-1">
+                        Unirme
+                      </button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <!-- FOOTER-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
+
